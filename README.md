@@ -50,7 +50,7 @@ Topic remapping in a ROS launch file allows you to change the name of a topic th
 
 ### Example Use Case
 
-Suppose you have a node that publishes laser scan data on `/laser_scan`, but the `gmapping` package expects the scan data on a topic called `/base_scan`. You can remap the topic like this:
+Suppose you have a node that publishes laser scan data on `/laser_scan`, but the `gmapping` package expects the scan data on a topic called `/scan`. You can remap the topic like this:
 
 ```xml
 <node pkg="gmapping" type="slam_gmapping" name="gmapping" output="screen">
